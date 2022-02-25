@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
     <meta charset="utf-8">
@@ -42,22 +42,6 @@
      background-size: cover;
       }
      </style>
-     <div id="respond">
-
-       <h3>Leave a Comment</h3>
-
-       <form action="post_comment.php" method="post" id="commentform">
-
-         <label for="comment" class="required">Your message</label>
-         <textarea name="comment" id="comment" rows="3" tabindex="2"  required="required"></textarea>
-
-    
-         <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
-         <input name="submit" type="submit" value="Submit comment" />
-
-       </form>
-
-     </div>
 
 
   </head>
@@ -96,10 +80,28 @@
 
 
 </aside class="menu">
+<div id="respond">
+
+  <h3>Leave a Comment</h3>
+
+  <form action="post_comment.php" method="post" id="commentform">
+
+    <label for="comment" class="required">Your message</label>
+    <textarea name="comment" id="comment" rows="3" tabindex="2"  required="required"></textarea>
+
+
+    <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+    <input name="submit" type="submit" value="Submit comment" />
+
+  </form>
+
+</div>
 
 </body>
 <footer>
     <p>&copy Fatima Omar , powered by fomar54 in Github </p>
     <img src="https://raw.githubusercontent.com/fomar54/webpage-gitub.io/main/Images%20/WELLCOME.gif"alt="Images /WELLCOME.gif" title="Logo"style="max-width:12%;height:auto">
 </footer>
+
+
 </html>
