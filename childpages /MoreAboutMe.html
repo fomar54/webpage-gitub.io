@@ -32,9 +32,30 @@
     width:73%;
     float:left;
     padding:15px;border: 1px solid black;}
-  </style>
 
-  <style>
+    .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
+
   body {
     background-image: url('https://raw.githubusercontent.com/fomar54/webpage-gitub.io/main/Images%20/4.jpg');
     background-repeat: no-repeat;
@@ -57,8 +78,14 @@
       <article class="main">
         <p style="font-size:3.2vw"> Where I was Born  </P>
           <p style="font-size:1.8vw">  I was born in Cairo Egypt I lived there till I was 5 years old. Obviously, I can remember some things about when I was in Egypt, how pretty it was and how nice the people were also I remember my house that I lived in but I only know it has blue walls. When I tell people I was born in Cairo Egypt they always ask me if I saw a mummy before and it makes me laugh every single time or they ask me how I lived there if it’s all sand, not knowing Egypt has grass. The surprising part for me is finding out what winter is and how cold it is in Canada at that time also found out that my brithday December 25th is in winter.</p>
-          <img src="https://ychef.files.bbci.co.uk/624x351/p07zy3y6.jpg"alt="Images /p07zy3y6.jpeg" title="Cairo,Egypt "style="max-width:29%;height:auto">
-        </article class="main">
+      <div class="dropdown">
+        <img src="https://ychef.files.bbci.co.uk/624x351/p07zy3y6.jpg" alt="Images /p07zy3y6.jpeg" width="100" height="50">
+        <div class="dropdown-content">
+        <img src="https://ychef.files.bbci.co.uk/624x351/p07zy3y6.jpg" alt="Images /p07zy3y6.jpeg" width="300" height="200">
+        <div class="desc">Beautiful Cairo,Egypt</div>
+        </div>
+      </div>
+      </article class="main">
       </section>
     <aside>
       </aside>
