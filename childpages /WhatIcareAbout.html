@@ -125,24 +125,15 @@
 </article>
     </section>
 
-    <aside class ="menu"
+    <aside class ="menu">
+      <form action="welcome.php" method="post">
+      Name: <input type="text" name="name"><br>
+      E-mail: <input type="text" name="email"><br>
+      <input type="submit">
+      </form>
+</aside>
 
-    <style="font-size:2.5vw"> </p>
 
-</aside class="menu">
-<button class="open-button" onclick="openForm()">Chat</button>
-
-<div class="chat-popup" id="myForm">
-  <form action="/index 2.php" class="form-container">
-    <h1>Chat</h1>
-    <label for="msg"><b>Name</b></label>
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
 
 <script>
 function openForm() {
@@ -153,10 +144,7 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
-
-
-
-                </body>
+</body>
 
   <footer>
     <p>&copy Fatima Omar , powered by fomar54 in Github </p>
